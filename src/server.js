@@ -2,8 +2,13 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+console.log("starting up")
+
 app.get('/', (req, res) => {
   res.send('Hello World!')
+})
+app.get('/ping', (req, res) => {
+  res.send('Hello pong!')
 })
 
 app.listen(port, () => {
