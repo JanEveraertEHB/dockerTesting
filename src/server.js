@@ -7,6 +7,13 @@ console.log("starting up - main")
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
+
+
+//add ping
+/**
+*  ping / pong for server testing
+*
+*/
 app.get('/ping', (req, res) => {
   res.send('Hello pong!')
 })
@@ -14,3 +21,4 @@ app.get('/ping', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+
