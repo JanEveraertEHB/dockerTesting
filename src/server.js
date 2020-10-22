@@ -8,7 +8,11 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-// adding pong
+
+/**
+*  ping / pong for server testing
+*
+*/
 app.get('/ping', (req, res) => {
   res.send('Hello pong!')
 })
@@ -16,3 +20,4 @@ app.get('/ping', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+
